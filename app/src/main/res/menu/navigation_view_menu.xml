@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/ic_group"
+        android:title="Friends">
+
+    </item>
+
+    <item
+        android:id="@+id/findfriends"
+        android:title="Find friends"
+        android:icon="@drawable/ic_group_add">
+
+    </item>
+
+
+   <item
+        android:id="@+id/menuProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_24dp">
+
+   </item>
+
+    <item
+        android:id="@+id/menuAddNewPost"
+        android:title="AddNewPost"
+        android:icon="@drawable/ic_add_box">
+
+    </item>
+
+
+    <item
+        android:id="@+id/message"
+        android:orderInCategory="100"
+        android:title="Messages"
+        android:icon="@drawable/ic_feedback"/>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout "
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_arrow_back_black_24dp">
+
+    </item>
+
+
+
+</menu>

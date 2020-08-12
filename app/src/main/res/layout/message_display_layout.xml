@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/round_profile_imageplaceholder"
+        android:id="@+id/message_profile_image">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="receiivers message Text"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/message_receivers_background"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/receivers_message">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sender message Text"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentTop="@+id/receivers_message"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/message_sender_background"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/sender_messsge"
+        >
+
+    </TextView>
+
+</RelativeLayout>

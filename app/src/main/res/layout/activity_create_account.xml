@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".E_MEET.Activities.CreateAccount"
+    android:background="@drawable/my_design">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/createAcountToolBar"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/createAcountimage"
+            android:src="@drawable/bee_pics"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/createAcountimage"
+            android:id="@+id/createAccountrel4"
+            >
+
+
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding = "13dp"
+                    android:id="@+id/accountEmail"
+                    android:hint="email"
+                    android:background="@drawable/edittext_background"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/ic_email" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/createAccountrel4"
+            android:id="@+id/createAccountrel2"
+            >
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="13dp"
+                    android:hint="password"
+                    android:id="@+id/password"
+                    android:background="@drawable/edittext_background"
+                    android:drawableLeft="@drawable/ic_lock"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/createAccountrel2"
+            android:id="@+id/createAccountrel3"
+            >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="13dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="confirm password"
+                    android:id="@+id/confirmpassword"
+                    android:drawableStart="@drawable/ic_lock"/>
+        </RelativeLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createAccountrel3"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_customize"
+            android:text="CREATE ACCOUNT"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:textColor="#fff"
+            android:id="@+id/signUp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

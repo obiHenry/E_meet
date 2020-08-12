@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".E_MEET.Activities.PersonFriendActivity"
+    android:background="@color/darkGray">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:civ_border_color="@android:color/background_light"
+                app:civ_border_width="2dp"
+                android:id="@+id/person_pic">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_name"
+                android:text="profile name"
+                android:layout_below="@+id/person_pic"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_username"
+                android:text=" username"
+                android:layout_below="@+id/person_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_status"
+                android:text=" hey there am using e_meet developed by element"
+                android:layout_below="@+id/person_username"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_margin="20dp"
+                android:textSize="22sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_country"
+                android:text=" country"
+                android:layout_below="@+id/person_status"
+                android:layout_marginTop="60dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_dob"
+                android:text=" Date of Birth"
+                android:layout_below="@+id/person_country"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_gender"
+                android:text=" gender"
+                android:layout_below="@+id/person_dob"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_relationshipstatus"
+                android:text=" relationship status"
+                android:layout_below="@+id/person_gender"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_phone_number"
+                android:text=" phone number"
+                android:layout_below="@+id/person_relationshipstatus"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp">
+            </TextView>
+
+            <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_phone_number"
+            android:layout_marginTop="45dp"
+                android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:hint="Send friend Request"
+                android:textAllCaps="false"
+            android:id="@+id/person_sendFriendRequest"
+            android:textColorHint="#fff"
+                android:textColor="#fff"
+            android:textSize="20sp"
+                android:layout_marginStart="30dp">
+
+        </Button>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_below="@+id/person_sendFriendRequest"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="#a41"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:hint="decline friend Request"
+                android:layout_marginStart="30dp"
+                android:id="@+id/person_cancelRequest"
+                android:textColorHint="#fff"
+                android:textSize="20sp">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

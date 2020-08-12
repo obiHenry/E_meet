@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainBackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/post_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:id="@+id/post_profile_image"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/post_user_name"
+                   android:text="User name"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginLeft="4dp"
+                   android:textAlignment="textStart"
+                   android:textStyle="bold"
+                   android:textSize="16sp"
+                   android:textColor="@color/black">
+               </TextView>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="5dp"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:id="@+id/text"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="has updated a post"
+                       android:textSize="13sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/darkGray">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/post_date"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Date"
+                       android:textSize="13sp"
+                       android:textColor="@color/black"
+                       android:layout_marginLeft="6dp">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/post_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Time"
+                       android:textSize="13sp"
+                       android:textColor="@color/black"
+                       android:layout_marginLeft="1dp">
+
+                   </TextView>
+               </LinearLayout>
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="post description"
+            android:id="@+id/post_description"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="3dp"
+            android:padding="3dp"
+            android:layout_marginRight="3dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="3dp"
+            android:id="@+id/post_image">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dislike"
+                android:id="@+id/post_dislike">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 likes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/post_like_text">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                android:layout_marginLeft="170dp"
+                android:baselineAlignBottom="false"
+                android:id="@+id/post_comment">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
